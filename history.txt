@@ -1,0 +1,276 @@
+    1  locate umuzi
+    2  locate *umuzi*
+    3  locate -r umuzi$
+    4  ls
+    5  locate -r umuzi
+    6  locate -c umuzi
+    7  locate -e umuzi
+    8  locate -c umuzi
+    9  locate [umuzi]
+   10  locate -c umuzi
+   11  locate LAMP-umuzi
+   12  locate -c umuzi
+   13  locate umuzi
+   14  locate admin1
+   15  locate umuzi > search_result
+   16  cd search_result
+   17  ls search_result
+   18  ls umuzi
+   19  locate umuzi > search_result.md
+   20  ls search_result.md
+   21  cd /Documents
+   22  cd ..
+   23  cd cd ../
+   24  cd .
+   25  cd Documents
+   26  cd ../Documents
+   27  cd Documents/
+   28  cd~
+   29  cd 
+   30  cd/ Documents/
+   31  cd ..
+   32  cd-
+   33  cd /home/Documents
+   34  cd /recruits/Documents
+   35  cd /recruit/Documents/
+   36  cd /recruit/Documents
+   37  Documents:
+   38  cd /recruit/Documents:
+   39  cd recruit/Documents
+   40  cd Documents  command 'cdb' from deb tinycdb
+   41  pwd
+   42  ls
+   43  pwd
+   44  cd linuxC/
+   45  ls
+   46  touch README.md && echo "this is markdown file" >>README.md
+   47  ls
+   48  cat README.md 
+   49  ls && echo "ls - is c folder , it means..."
+   50  ls && echo "ls - is c folder , it means..." >> RAEDME.md
+   51  cat RAEDME.md 
+   52  ls && echo "1. ls - is c folder , it means..." >> RAEDME.md
+   53  clear
+   54  ls
+   55  git init 
+   56  git status 
+   57  git add RAEDME.md 
+   58  git status 
+   59  git rm --cached RAEDME.md
+   60  git status 
+   61  git add .
+   62  git commit -m "sudo mass production commit"
+   63  git config --global user.email "victoriousmkhonto@gmail.com"
+   64  git config --global user.name "Your Name"
+   65  git config --global user.name "AndiswaMkhonto"
+   66  git commit -m "sudo mass production commit"
+   67  git remote add origin https://github.com/AndiswaMkhonto/linux.git
+   68  git status 
+   69  git push
+   70  git push --set-upstream origin master
+   71  find ".pdf*"
+   72  find .pdf$
+   73  find "*.pdf"
+   74  find "*pdf"
+   75  locate "*find"
+   76  locate "*pdf"
+   77  locate -c "*pdf"
+   78  locate "*pdf" > Desktop
+   79  cd Desktop
+   80  ls
+   81  locate "*pdf" > workspace
+   82  ls workspace
+   83  cd workspace
+   84  ls
+   85  pwd
+   86  cp locate "*pdf" workspace
+   87  cd ..
+   88  cd /
+   89  mkdir andi
+   90  cd /home
+   91  mkdir andi
+   92  cd /home/recruits
+   93  cd /home/recruit/Desktop
+   94  mkdir andiswa
+   95  ls
+   96  cp [locate "*pdf"] andiswa
+   97  cd /home/recruit/Documents
+   98  locate "*pdf" >> work
+   99  cd work
+  100  ls work
+  101  cd /work
+  102  locate "*pdf" >> Desktop
+  103  cd /home/recruit/Desktop
+  104  ls
+  105  pwd
+  106  cd /home/recruit/Desktop/work
+  107  ls
+  108  ls -A
+  109  ls -a
+  110  # find . -maxdepth 1 -newermt "2016-12-06"
+  111  # find . -maxdepth 1 -newermt "2020-01-15"
+  112  cd .
+  113  cd ..
+  114  find -maxdepth 1 -type f -daystart -mtime -1
+  115  ls -Alog * –time-style=+%D | grep $(date +%D) | awk ‘{print $NF}’
+  116  ls -lrt | grep “Jan 15”
+  117  pwd
+  118  ls
+  119  cd /home/recruit/Documents
+  120  touch pad.md
+  121  ls
+  122  cd /home/recruit/Desktop
+  123  mkdir work
+  124  ls
+  125  cp pad.md pad_copy.md
+  126  cd /home/recruit/Documents
+  127  cp pad.md pad_copy.md
+  128  ls
+  129  cd /home/recruit/Desktop
+  130  ls 
+  131  touch pad.md
+  132  cp pad.md pad_copy.md
+  133  locate updatedb
+  134  cd -
+  135  locate pad_copy.md
+  136  locate -c pad_copy.md
+  137  locate pad_copy.md
+  138  ls
+  139  nano my_bio.md
+  140  nano my_bio.md
+  141  Exit
+  142  Write Out
+  143  nano my_bio.md
+  144  mkdir my_files
+  145  ls
+  146  mv my_bio.md my_files
+  147  ls
+  148  ls
+  149  pwd
+  150  mkdir workspace
+  151  mkdir workspace1
+  152  cd workspace1
+  153  ls
+  154  touch README1.md
+  155  cp README1.md CHANGELOG.md
+  156  ls
+  157  touch exercise.md
+  158  mv exercise.md ~/tmp
+  159  rm exercise.md
+  160  ls 
+  161  cd \tmp
+  162  cd tmp
+  163  ..
+  164  cd ..
+  165  rm exercise.md
+  166  ls tmp
+  167  mv exercise.md ~\tmp
+  168  mv exercise.md ~/tmp
+  169  touch exercise1.md
+  170  mv exercise1.md ~/tmp
+  171  ls tmp
+  172  cd tmp
+  173  mv exercise1.md /work
+  174  cat >andi.md 
+  175  ls
+  176  cat >umuzin.md
+  177  cat andiu.md
+  178  cat The End >> summary.md
+  179  cat >vicky.md 
+  180  cat >vocky.md
+  181  cat vicky.md vocky.md
+  182  cat vicky.md vocky.md > vucky.md
+  183  cat The End >> vucky.md
+  184  cat Thed >> vucky.md
+  185  cat "Thed" >> vucky.md
+  186  cat > vucky.md
+  187  locate umuzi
+  188  locate umuzi > search_result.md
+  189  cd /home/recruit/Documents
+  190  cd /home/recruit/Desktop
+  191  cd -
+  192  locate pad_copy.md
+  193  cd ..
+  194  find "*pdf"
+  195  find "*.pdf"
+  196  find -name "*pdf"
+  197  find -name "*pdf" > work
+  198  ls
+  199  find -name "*pdf" >> work
+  200  find -maxdepth 1 -type f -daystart -mtime -1
+  201  cat >umuzi5.md 
+  202  ls
+  203  sudo apt install git
+  204  git clone https://github.com/AndiswaMkhonto/LinuxChallenges.git
+  205  git add .
+  206  git add *
+  207  git add Task 1.txt
+  208  cd LinuxChallenges/
+  209  git add *
+  210  git status
+  211  git commit -m "LinuxChallenges"
+  212  git commit
+  213  git reset
+  214  ls
+  215  git add *
+  216  git status
+  217  git add *
+  218  git status
+  219  git add Task1.txt
+  220  cd
+  221  cd LinuxChallenges/
+  222  ls
+  223  git add .
+  224  git status
+  225  git init
+  226  git add .
+  227  git status
+  228  git branch --unset-upstream
+  229  git status
+  230  git add .
+  231  git status
+  232  git add Task1
+  233  git status
+  234  ls
+  235  git reset
+  236  git add *
+  237  git status
+  238  https://github.com/AndiswaMkhonto/LinuxProject.git
+  239  git clone https://github.com/AndiswaMkhonto/LinuxProject.git
+  240  git add .
+  241  git status
+  242  git branch --set-upstream-to origin/master
+  243  git branch -u origin/master
+  244  git branch -u origin
+  245  cd ..
+  246  cd LinuxProject/
+  247  ls
+  248  git add LinuxChallenges.txt
+  249  git add LinuxChallenges
+  250  git status
+  251  git commit -m "linux Tasks"
+  252  git commit
+  253  git push
+  254  git branch
+  255  git branch miklshake-flavours
+  256  git branch
+  257  git branch 
+  258  git checkout -b andi
+  259  git branch
+  260  git checkout -b milkshake-flavours
+  261  git branch
+  262  git checkout -b milkshake-flavours
+  263  nano milkshakes.md
+  264  git status
+  265  git add milkshakes.md
+  266  git status
+  267  git commit -m "added initial flavours"
+  268  git log
+  269  git checkout master
+  270  git branch
+  271  git brach history
+  272  git branch history
+  273  git checkout history
+  274  git log
+  275  git checkout git -b history
+  276  history > history.txt
