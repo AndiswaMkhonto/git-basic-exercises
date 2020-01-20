@@ -1,0 +1,396 @@
+                            Initial commit
+
+
+1.mkdir git-basic-exercises
+2.cd git-basic-exercises
+3.ls -a
+4.git init
+  ls -a
+5.git status
+6.touch README.md
+  ls -a
+  git status
+7.git log
+8.git add README.md
+9.git status
+  It says no commits have been made but the README.md file is available on the         staging area.
+10.git reset
+   git status
+11.git add README.md
+   git commit -m "Initial commit"
+12.git log
+   q to exit
+
+
+                               More commits!
+
+
+1.nano README.md
+  I love Andiswa Mkhonto
+  ctrl + x
+  y then ENTER
+2.cat README.md
+3.git status
+4.git add README.md
+  git status
+  git commit -m "Second commit"
+5.nano README.md
+  I do love soccer
+  ctrl + x
+  y then ENTER
+  cat README.md
+  git add README.md
+  git status
+  git commit -m "Third commit"
+
+
+                                    Check this out
+
+1.git log
+3.git checkout 8ee2c25b5936bd198cad276a301b8d2cb097df2d ENTER
+4.cat README.md
+5.git checkout master
+6.cat README.md
+
+
+                                     Branching
+
+1.git branch
+2.git branch milkshake-flavours
+3.git branch
+4.git branch 
+  When i swicth in between the different branches the one that i am currently on has an asterisk next to it and it changes its color to green. To switch between the different branches i use the following command: git checkout milkshake-flavours
+5.nano milkshakes.md
+  chocolate
+  vannila
+  caramel
+  ctrl + x
+  y then ENTER
+6.On branch milkshake-flavours
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	milkshakes.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+7.git add milkshakes.md
+  git status
+  git commit -m "added initial flavours"
+8.git log and press q to exit logview
+9.git checkout -b master
+10.git branch history
+   git checkout history 
+   git log (it has only three commits)
+recruit@umuzi:~/bit-basic-exercises$ git log
+commit a7b861324dec7ad12c36d575c1267e652b89790f (HEAD -> history, miklshake-flavours, master, andi)
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:47:47 2020 +0200
+
+    Third commit
+
+commit d0278dfcd2efa372e5273b5de4daceb5d21da208
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:42:43 2020 +0200
+
+    Second commit
+
+commit 8ee2c25b5936bd198cad276a301b8d2cb097df2d
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:37:38 2020 +0200
+
+    Initial commit
+11.It takes whatever that is in the history branch and sends it to the  history.txt file.
+12.git add history.txt
+   git status
+   git commit -m "added history"
+   git log
+  recruit@umuzi:~/bit-basic-exercises$ git log
+commit ab45bca405739b8d54a94ac3eb714496831a918a (HEAD -> history)
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 10:32:07 2020 +0200
+
+    added history
+
+commit a7b861324dec7ad12c36d575c1267e652b89790f (miklshake-flavours, master, andi)
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:47:47 2020 +0200
+
+    Third commit
+
+commit d0278dfcd2efa372e5273b5de4daceb5d21da208
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:42:43 2020 +0200
+
+    Second commit
+
+commit 8ee2c25b5936bd198cad276a301b8d2cb097df2d
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:37:38 2020 +0200
+
+:
+13.git checkout milkshake-flavours
+   git log
+recruit@umuzi:~/bit-basic-exercises$ git log
+commit 653e00b5072a0ee0d1ccdbfe295e26e57ea49569 (HEAD -> milkshake-flavours)
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 10:18:21 2020 +0200
+
+    added initial flavours
+
+commit a7b861324dec7ad12c36d575c1267e652b89790f (miklshake-flavours, master, andi)
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:47:47 2020 +0200
+
+    Third commit
+
+commit d0278dfcd2efa372e5273b5de4daceb5d21da208
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:42:43 2020 +0200
+
+    Second commit
+
+commit 8ee2c25b5936bd198cad276a301b8d2cb097df2d
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:37:38 2020 +0200
+
+    Initial commit
+14.echo "movies are my worst enemy." > README.md
+   git add README.md
+   git status
+   git commit -m "Random readme changes"
+15.git checkout history
+   cat README.md
+16.rm README.md
+   echo "booya" > README.md
+17.git add README.md
+   git status
+   git commit -m"Rewrote readme"
+18.git checkout master
+
+recruit@umuzi:~/bit-basic-exercises$ git checkout master
+Switched to branch 'master'
+recruit@umuzi:~/bit-basic-exercises$ ls
+README.md
+
+recruit@umuzi:~/bit-basic-exercises$ git log
+commit a7b861324dec7ad12c36d575c1267e652b89790f (HEAD -> master, miklshake-flavours, andi)
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:47:47 2020 +0200
+
+    Third commit
+
+commit d0278dfcd2efa372e5273b5de4daceb5d21da208
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:42:43 2020 +0200
+
+    Second commit
+
+commit 8ee2c25b5936bd198cad276a301b8d2cb097df2d
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:37:38 2020 +0200
+
+    Initial commit
+
+
+recruit@umuzi:~/bit-basic-exercises$ git checkout milkshake-flavours
+Switched to branch 'milkshake-flavours'
+recruit@umuzi:~/bit-basic-exercises$ ls
+milkshakes.md  README.md
+
+
+
+
+
+                                       Merging
+
+1.git checkout master
+git merge milkshake-flavours
+2.ls
+git log
+3.git checkout master 
+git merge history
+4.ls
+  git log
+5.git checkout history
+git log
+...
+git checkout milkshake-flavours
+git log
+
+1.git checkout history
+  git merge master
+  git log
+2.git checkout master
+  git log
+
+
+                                       Github
+
+1.git remote add origin https://github.com/AndiswaMkhonto/git-basic-exercises.git
+  git push origin history
+  git push origin milkshake-flavours
+
+                                      Pulling and remotes
+
+1.cd ../
+5.git clone https://github.com/Umuzi-org/tech-department.git
+6.cd tech-department
+7.git branch
+  It shows the master branch with an asterisk to show that I am currently on the    master branch and it is the only which exists so far.
+  git log
+It shows the following:
+  recruit@umuzi:~/tech-department$ git log
+commit faa2991f90c8fd5d247cdbe2300737009936f8a9 (HEAD -> master, origin/master, origin/HEAD)
+Merge: 84e2c9ed 0c672dd5
+Author: Sheena O'Connell <sheena.oconnell@gmail.com>
+Date:   Tue Jan 14 18:46:39 2020 +0200
+
+    Merge branch 'master' of github.com:Umuzi-org/tech-department
+
+commit 84e2c9ed07ebfa7249bcefe78cf3f9803538da48
+Author: Sheena O'Connell <sheena.oconnell@gmail.com>
+Date:   Tue Jan 14 18:32:25 2020 +0200
+
+    Java NCIT search and sort moved to week 8
+
+commit 0c672dd556d6cbcb99ecedb3c6ea0c5685e11569
+Merge: f4df480b 73d369b5
+Author: sheenarbw <sheena.oconnell@gmail.com>
+Date:   Fri Jan 10 12:34:16 2020 +0200
+
+    Merge pull request #380 from Umuzi-org/topics/android/app-lifecycle
+    
+    Topics/android/app lifecycle
+
+commit f4df480b91d0551a599c63d04c24140dba5ce668
+Merge: ec3848b7 d5f06113
+Author: sheenarbw <sheena.oconnell@gmail.com>
+Date:   Fri Jan 10 12:32:28 2020 +0200
+
+    Merge pull request #382 from Umuzi-org/projects/android/incremental-counter
+    
+    Created Android incremental counter project
+
+commit ec3848b798ab1b8dcb5afea9270caf73162d308e
+Merge: 77959df3 c646a44b
+Author: sheenarbw <sheena.oconnell@gmail.com>
+Date:   Fri Jan 10 12:30:37 2020 +0200
+
+    Merge pull request #270 from Umuzi-org/update/linux_submission_instructions
+    
+    added submission instructions
+:
+8.git branch -a
+9.git checkout -b project/git-basic-exercises
+10.git remote -v
+
+                                    Multiple repos
+
+1.git log
+2.git checkout -b git-basic-exercises
+  git log
+3.cd /home
+  mkdir this-will-be-another-repo
+4.git init
+Initialized empty Git repository in /home/recruit/this-will-be-another-repo/.git/
+5.touch README.md
+  git add README.md
+  git status
+  git commit -m "blank file"
+6.recruit@umuzi:~/bit-basic-exercises$ git log
+commit d5c5cd106d023a260a199c25ef29c6764e42de77 (HEAD -> master, origin/milkshake-flavours, origin/master, history/master, milkshake-flavours)
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 10:53:17 2020 +0200
+
+    random readme changes
+
+commit 653e00b5072a0ee0d1ccdbfe295e26e57ea49569
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 10:18:21 2020 +0200
+
+    added initial flavours
+
+commit a7b861324dec7ad12c36d575c1267e652b89790f (andi)
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:47:47 2020 +0200
+
+    Third commit
+
+commit d0278dfcd2efa372e5273b5de4daceb5d21da208
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:42:43 2020 +0200
+
+:...skipping...
+commit d5c5cd106d023a260a199c25ef29c6764e42de77 (HEAD -> master, origin/milkshake-flavours, origin/master, history/master, milkshake-flavours)
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 10:53:17 2020 +0200
+
+    random readme changes
+
+commit 653e00b5072a0ee0d1ccdbfe295e26e57ea49569
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 10:18:21 2020 +0200
+
+    added initial flavours
+
+commit a7b861324dec7ad12c36d575c1267e652b89790f (andi)
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:47:47 2020 +0200
+
+    Third commit
+
+commit d0278dfcd2efa372e5273b5de4daceb5d21da208
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:42:43 2020 +0200
+
+    Second commit
+
+commit 8ee2c25b5936bd198cad276a301b8d2cb097df2d
+Author: AndiswaMkhonto <victoriousmkhonto@gmail.com>
+Date:   Fri Jan 17 08:37:38 2020 +0200
+
+    Initial commit
+~
+~
+                                                    gitignore
+1.touch ignore-me.db
+2.git status
+3.nano .gitignore
+4.ignore-me.db
+ctrl + X
+y then ENTER
+5.git status
+6.mkdir large-directory-that-should-be-local-only
+7.cd large-directory-that-should-be-local-only
+  echo "I love Aniiii"> readme.md
+8.cd ..
+  git status
+  Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	large-directory-that-should-be-local-only/
+9.nano .gitignore
+  ENTER
+  /large-directory-that-should-be-local-only
+  ctrl + x
+  y then ENTER
+10.git status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
